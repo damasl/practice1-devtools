@@ -2,7 +2,7 @@
 
 Filters* createFiltersOpenCV();
 // Declare your implementation here
-// Filters* createFiltersYourName();
+Filters* createFiltersMaslova();
 
 Filters* createFilters(FILTERS_IMPLEMENTATIONS impl)
 {
@@ -10,8 +10,8 @@ Filters* createFilters(FILTERS_IMPLEMENTATIONS impl)
         case OPENCV:
             return createFiltersOpenCV();
         // Add case for your implementation
-        // case YOUR_NAME:
-        //     return createFiltersYourName();
+        case MASLOVA:
+            return createFiltersMaslova();
         default:
             return 0;
     }
